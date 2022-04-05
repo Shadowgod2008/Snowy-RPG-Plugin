@@ -13,7 +13,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class SalvationListener implements Listener {
     @EventHandler
-    public void onDesolationAttack(EntityDamageByEntityEvent e) {
+    public void onEntityAttack(EntityDamageByEntityEvent e) {
         if (e.getDamager() instanceof Player){
             Player p = (Player) e.getDamager();
             Entity entity = e.getEntity();
